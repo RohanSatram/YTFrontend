@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YT</title>
+    <link rel="stylesheet" href="result.css" />
+  </head>
+  <body>
+    <div class="container">
+      <iframe
+        id="player"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY"
+        frameborder="0"
+        width="500"
+        height="300"
+      ></iframe>
+      <div class="text">
+        <p>{{ result }}</p>
+        <h3>Enter a follow-up question:</h3>
+        <form id="follow-up", action = "/result", method = "post">
+          <textarea name="ytfollowup"></textarea></br>
+          <input type="submit" , value="Go ->" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
